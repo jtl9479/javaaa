@@ -11,22 +11,16 @@ public class ex0518_5 {
 		System.out.println("두수를 입력하세요");
 		int num1 = scan.nextInt();
 		int num2 = scan.nextInt();
-		
-		max(num1, num2);//num1,num2가 각각 입력되 max(int a,int b)에 각각 저장된다
-		
-		System.out.println("데이터 : "+ max(num1,num2));
-	
-	}//main메소드
 
-	static int max(int num1,int num2) { //같은 class에서도  객체선언을해서 사용을 해야한다
-		//매게변수는 왠만하면 main의 이름과 맞춰서 쓴다.
-		int result = 0; //결과값
-		
-		if(num1>num2) {
-			result = num1;
-		}else {
-			result = num2;
-		}
-		return result; //리턴값이 System.out.println("데이터 : "+ max(num1,num2));로 가서 값을 출력한다.
+		int result = add(num1, num2);
+
+		System.out.println("데이터 : " + result);
+
+	}// main메소드
+
+	static int add(int num1, int num2) {//매개변수 타입 매개변수명 값1,값2 
+		int result = num1 + num2;
+		return result;//return타입 return 과 매개변수 타입을 맞춰야한다. 리턴타입이없을떄는 void를 사용한다 void는 안써도된다.
 	}
+	
 }
