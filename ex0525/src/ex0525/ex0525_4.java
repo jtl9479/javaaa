@@ -1,0 +1,45 @@
+package ex0525;
+
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.Scanner;
+
+public class ex0525_4 {
+
+	public static void main(String[] args) {
+		
+		Scanner scan = new Scanner(System.in);
+		int stu_number = 0;
+		String stu_name = "";
+		String stu_date="";
+		int count =0;
+		
+		System.out.println("학생이름을 입력하세요");
+		stu_name = scan.next();
+		stu_number = ++count;
+		//날짜 생성
+		Date today = new Date();
+		//날자 시간 포맷
+		SimpleDateFormat date = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss");
+		//날짜 시간 포맷에 맞게 표현
+		stu_date = date.format(today);
+	
+	
+	
+		System.out.println("학생정보");
+		System.out.println("학번 : " + stu_number);
+		System.out.println("이름 : " + stu_name);
+		System.out.println("날짜 : " + today);
+		System.out.println("시간 : " + stu_date);
+		
+	
+	
+	
+	
+	
+	
+	
+	}
+
+
+}
